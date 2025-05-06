@@ -1,0 +1,189 @@
+:root{
+    --colorbg:#0062d3;
+}
+body{
+    background-color: #F5F5F5;
+}
+
+.my-nav{
+    background-color:  #040404 !important;
+    font-weight: 600;
+}
+.top-minus-15 {
+    top:-4px;
+  }
+.typed-cursor {
+    color:white;        /* change cursor color */
+    font-weight: 400;
+    font-size: inherit;    /* keep it aligned with text size */
+    display: inline;       /* ensure it's on the same line */
+    animation: blink 0.7s infinite;
+  }
+  
+  @keyframes blink {
+    0%, 100% { opacity: 1; }
+    50% { opacity: 0; }
+  } 
+  
+  
+/* home */
+nav{
+    background-color: #040404;
+}
+nav .nav-item a {
+    position: relative;
+    
+    padding-bottom: 4px;
+  }
+  
+  nav .nav-item a::after {
+    content: "";
+    position: absolute;
+    left: 5px;
+    bottom: 0;
+    height: 1px;
+    width:80%;
+    background-color: white;
+    transform: scaleX(0);
+    transform-origin: left;
+    transition: transform 0.5s ease-in ;
+  }
+  
+  nav .nav-item:hover a::after {
+    transform: scaleX(1); /* This creates the "step by step" effect */
+  }
+  
+#home{
+    min-height: 100vh;
+    background-image:linear-gradient(rgba(0,0,0,0.5)), url(../images/home.jpg);
+    background-position:center;
+    background-size: cover;
+ 
+}
+/* about */
+  .line {
+        display: inline-block;
+        position: relative;
+        padding-bottom: 5px;
+      }
+  
+.line::after  {
+        content: '';
+        position: absolute;
+        left: 0;
+        bottom: 0;
+        height: 4px;
+        width: 50px;
+        background-color: #007bff; /* Bootstrap primary blue */
+      
+}
+
+#about .skill1 .progress-bar  {
+    width:85% ;
+}
+#about .skill4 .progress-bar {
+    width:90% ;
+}
+#about p{
+    
+    color: rgb(78, 78, 78);
+    }
+    /* service */
+#service .ico-circle {
+        width: 80px;
+        height: 80px;
+        border: 8px solid #0078FF;
+        border-radius: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+      #service p{
+       color: rgb(78, 78, 78);
+      }
+      #service .ico-circle:hover{
+          background-color:#0078FF ;
+          border: 8px solid #CDE1F8;
+      }
+ /* feedback */
+ #feedback{
+    background-image: linear-gradient(rgba(0,120 ,255, 0.6)), url(../images/counters-bg.jpg);
+    background-position: center;
+    background-size: cover;
+    background-attachment:fixed;
+ }
+ #feedback .ico-circle {
+    width: 80px;
+    height: 80px;
+    border: 8px solid #CDE1F8;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  /* portfolio */ 
+  #portfolio figure {
+    overflow: hidden;
+  }
+ 
+  #portfolio figure img {
+    transition: transform 1s;
+  }
+  
+  #portfolio figure:hover img {
+    transform: scale(1.09);
+  }
+
+ /* blog */
+ #slider {
+    background-image: linear-gradient(rgba(0,120 ,255, 0.8)), url(../images/overlay-bg.jpg);
+    background-position: center;
+    background-size: cover;
+    background-attachment:fixed;
+ }
+ #slider img{
+    width: 150px;
+    height: 150px;
+ }
+  .carousel-indicators [data-bs-target] {
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    background-color: white;
+  }
+  /* blog */
+ #blog p{
+    color: rgb(78, 78, 78);
+ }
+ #blog .list-group img{
+   width: 10%;
+ }
+/* contact */
+#contact{
+    background-color: #166BD7;
+}
+#contact p{
+    color: rgb(78, 78, 78);
+    }
+#contact .items span{
+    color:#0062d3;
+}
+#contact .ico-circle{
+border-radius: 50%;
+border: #0078FF solid .2rem;
+padding:.5rem;
+}#contact .ico-circle:hover{
+    background-color:#0078FF ;
+    border: 2px solid #CDE1F8;
+    color:white;
+}
+#contact button:hover{
+    border: 4px solid #CDE1F8;
+    background-color: #3393FF;
+}
+
+/* footer */
+#footer{
+  background-color: var(--colorbg);
+  color:white;
+}
