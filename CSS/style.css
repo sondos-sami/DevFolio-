@@ -131,7 +131,7 @@ nav .nav-item a {
   }
   
   #portfolio figure:hover img {
-    transform: scale(1.09);
+    transform: scale(1.2);
   }
 
  /* blog */
@@ -181,7 +181,9 @@ padding:.5rem;
     border: 4px solid #CDE1F8;
     background-color: #3393FF;
 }
-
+.carousel-indicators .active {
+    background-color:#3393FF  !important;
+}
 /* footer */
 #footer{
   background-color: var(--colorbg);
